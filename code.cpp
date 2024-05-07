@@ -6,14 +6,8 @@ using namespace std;
 
 // Function to perform addition
 
-int Sum() {
-	int a,b;
-	cout << "Enter a: ";
-	cin >> a;
-	cout << "Enter b: ";
-	cin >> b;
-	cout << "a + " << "b = " << (a+b) << endl;
-	return 0;
+	int Sum(int a, int b) {
+	return a+b;
 }
 // Function to generate a valid web link 
 // input: Name of the website want to create the link
@@ -43,7 +37,12 @@ int main() {
 		cin >> choice;
 		switch (choice) {
 		case 1:
-			Sum();
+			int a,b;
+			cout << "Enter a: ";
+			cin >> a;
+			cout << "Enter b: ";
+			cin >> b;
+			cout << a << " + " << b << " = " << Sum(a,b);
 			break;
 		case 2:
 			Linkgenerator();
